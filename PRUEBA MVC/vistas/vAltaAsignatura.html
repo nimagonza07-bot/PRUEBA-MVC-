@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta Asignaturas</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+<body>
+    <div class="header-bar-centrado">
+        <h1 class="titulo-centrado">ALTA ASIGNATURAS</h1>
+    </div>
+
+    <div class="contenedor-formulario">
+        <form action="index.php?controlador=cAsignaturas&metodo=guardar" method="POST">
+            <div class="grupo-input">
+                <input type="text" name="nombre" placeholder="ASIGNATURA" required>
+            </div>
+            <div class="grupo-input">
+                <input type="text" name="siglas" placeholder="ABREVIATURA" required>
+            </div>
+            <input type="submit" name="guardarAsignatura" value="REGISTRAR" class="btn-registrar">
+        </form>
+    </div>
+</body>
+</html>
